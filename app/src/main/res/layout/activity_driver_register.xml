@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main2">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="414dp"
+        android:layout_height="149dp"
+        app:srcCompat="@drawable/bg_top"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="-8dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ĐĂNG KÝ TÀI XẾ"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="52dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:ignore="ExtraText,MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="150dp">
+
+        <!-- Hàng 1 -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextHoTen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Họ và tên*"
+                android:inputType="text|textMultiLine"
+                android:maxLines="1" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonNam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nam" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonNu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nữ" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Hàng 2 -->
+        <EditText
+            android:id="@+id/editTextSoDienThoai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số điện thoại*" />
+
+        <!-- Hàng 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="176dp"
+                android:layout_height="wrap_content"
+                android:hint="Địa chỉ email" />
+
+            <EditText
+                android:id="@+id/editTextDiaChi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Địa chỉ*" />
+        </LinearLayout>
+
+        <!-- Hàng 4 -->
+        <EditText
+            android:id="@+id/editTextCanCuoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Căn cước công dân*" />
+
+        <!-- Hàng 5 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextNgayCapCMND"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Ngày cấp CCCD" />
+
+            <EditText
+                android:id="@+id/editTextNoiCapCMND"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Nơi cấp CCCD" />
+        </LinearLayout>
+
+        <!-- Hàng 6 -->
+
+        <EditText
+            android:id="@+id/editTextBienSoXe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Biển số xe*" />
+
+        <!-- Hàng 7 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextLoaiXe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Loại xe" />
+
+            <EditText
+                android:id="@+id/editTextMauXe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Màu xe" />
+
+            <EditText
+                android:id="@+id/editTextHangXe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Hãng xe" />
+        </LinearLayout>
+
+        <!-- Hàng 8 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lưu ý: Các mục có dấu (*) là bắt buộc phải điền thông tin." />
+
+        <!-- Hàng 9 -->
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="133dp"
+            android:backgroundTint="@color/rectangle_26_color"
+            android:text="ĐĂNG KÝ"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="581dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
